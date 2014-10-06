@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<!-- Responsive web designe -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Si se quiere desabilitar zoom -->
+		<!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">-->
+
+		<title>Curso de Bootstrap 3</title>
+		<!-- mayor compatibilidad con IE8 -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<!-- CSS de Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+		<!-- librerÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¯ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¿ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â½as opcionales que activan el soporte de HTML5 para IE8 -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+
+		<div class="container text-justify table-responsive">
+			<h2>CapÃƒÂ¡tulo 4. Elementos CSS </h2>
+			<p >
+				En este capÃƒÂ¡tulo se explican los estilos que define Bootstrap 3 para las tablas y las imÃƒÂ¡genes, incluyendo todas sus variantes. TambiÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©n se explican las classes CSS genÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©ricas y utilidades que simplifican el diseÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â±o de los sitios web y que se pueden aplicar a cualquier elemento.
+			</p>
+			<!--*********************************************************-->
+			<div class="well container-fluid">
+				<h3>4.1.  Tablas </h3>
+				<p>
+					AÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â±de la clase .table a cualquier elemento
+					<code>
+						table
+					</code> para aplicar los estilos bÃƒÂ¡sicos de Bootstrap 3 para tablas.
+					El resultado es una tabla con un padding muy sutil y con lÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â­neas de separaciÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â³n solamente en las filas.
+				</p>
+				<p>
+					Puede parecer absurdo tener que aÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â±dir la clase
+					<code>
+						.table
+					</code>
+					para que se apliquen los estilos a las tablas, pero ten en cuenta que el elemento
+					<code>
+						table
+					</code> se utiliza para muchas otras cosas que no son necesariamente tablas,
+					como por ejemplo calendarios y selectores de fechas.
+				</p>
+				<table class="table">
+					<tr>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td>4</td>
+					</tr>
+				</table>
+			</div>
+
+			<!--*********************************************************-->
+			<div class="well container-fluid">
+				<h3>4.1.2. Tablas cebreadas</h3>
+				<p>
+					Las tablas cebreadas son aquellas cuyas filas alternan su color de fondo para mejorar la legibilidad de los contenidos. Su aspecto recuerda a la piel de una cebra y de ahÃƒÂ¡ su nombre. En inglÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©s se denominan "striped tables" y por eso en Bootstrap 3 estas tablas se crean aÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â±diendo la clase
+					<code>
+						.table-striped
+					</code>
+					. Ejemplo:
+					<table class="table table-striped">
+						<tr>
+							<td>1</td>
+							<td>2</td>
+							<td>3</td>
+							<td>4</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>2</td>
+							<td>3</td>
+							<td>4</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>2</td>
+							<td>3</td>
+							<td>4</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>2</td>
+							<td>3</td>
+							<td>4</td>
+						</tr>
+					</table>
+				</p>
+			</div>
+
+			<!--*********************************************************-->
+			<div class="well container-fluid">
+				<h3>4.1.3. Tablas con bordes</h3>
+				<p>
+					Si prefieres utilizar el estilo tradicional de las tablas con los cuatro bordes en todas las celdas y en la propia tabla, aÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±ade la clase
+					<code>
+						.table-bordered
+					</code>
+					. Ejemplo:
+				</p>
+				<table class="table table-bordered">
+					<tr>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td>4</td>
+					</tr>
+				</table>
+			</div>
+
+			<!--*********************************************************-->
+			<div class="well container-fluid">
+				<h3>4.1.4. Tablas dinÃƒÂ¡micas</h3>
+				<p>
+					Para que los contenidos de la tabla sean todavÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â­a mÃƒÂ¡s fÃƒÂ¡ciles de entender, aÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±ade la clase
+					<code>
+						.table-hover
+					</code>
+					para modificar ligeramente el aspecto de las filas cuando el usuario pasa el ratÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³n por encima
+					de ellas (sÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³lo funciona para las filas dentro de
+					<code>
+						tbody
+					</code>
+					).
+				</p>
+				<table class="table table-hover">
+					<tr>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td>4</td>
+					</tr>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>2</td>
+							<td>3</td>
+							<td>4</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>2</td>
+							<td>3</td>
+							<td>4</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>2</td>
+							<td>3</td>
+							<td>4</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<!--*********************************************************-->
+			<div class="well container-fluid">
+				<h3>4.1.5. Tablas condensadas</h3>
+				<p>
+					Cuando una tabla es muy grande o cuando tienes muchas tablas en una misma pÃƒÂ¡gina, puede ser interesante mostrar sus contenidos de forma mÃƒÂ¡s compacta.
+					AÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±ade la clase
+					<code>
+						.table-condensed
+					</code>
+					a tus tablas y el <tt>padding</tt> se reducirÃƒÂ¡ a la mitad. Ejemplo:
+
+				</p>
+				<table class="table table-condensed">
+					<tr>
+						<td>1111111111 11111111</td>
+						<td>2222222 22222 22222</td>
+						<td>3333 33333333</td>
+						<td>44444444444 444</td>
+					</tr>
+					<tr>
+						<td>1111111111 11111111</td>
+						<td>2222222 22222 22222</td>
+						<td>3333 33333333</td>
+						<td>44444444444 444</td>
+					</tr>
+					<tr>
+						<td>1111111111 11111111</td>
+						<td>2222222 22222 22222</td>
+						<td>3333 33333333</td>
+						<td>44444444444 444</td>
+					</tr>
+					<tr>
+						<td>1111111111 11111111</td>
+						<td>2222222 22222 22222</td>
+						<td>3333 33333333</td>
+						<td>44444444444 444</td>
+					</tr>
+				</table>
+			</div>
+
+			<!--*********************************************************-->
+			<div class="well container-fluid">
+				<h3>4.1.6. Tablas semÃƒÂ¡nticas</h3>
+				<p>
+					Las clases CSS semÃƒÂ¡nticas explicadas en el capÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â­tulo anterior para el texto tambiÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©n se pueden aplicar a las filas y a las celdas de una tabla:
+					<ul>
+						<li>
+							<code>
+								.active
+							</code>
+							, aplica el color del estado hover a la fila o celda para que parezca que estÃƒÂ¡ activa.
+						</li>
+						<li>
+							<code>
+								.success
+							</code>
+							, indica que el resultado de alguna operaciÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³n ha sido un ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©xito.
+						</li>
+						<li>
+							<code>
+								.warning
+							</code>
+							, avisa al usuario que se ha producido alguna circunstancia que puede requerir su atenciÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³n.
+						</li>
+						<li>
+							<code>
+								.danger
+							</code>
+							, indica que una acciÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³n es negativa o potencialmente peligrosa.
+						</li>
+					</ul>
+				</p>
+				<table class="table">
+					<tr>
+						<td class="active">1</td>
+						<td class="success">2</td>
+						<td class="warning">3</td>
+						<td class="danger">4</td>
+					</tr>
+					<tr>
+						<td class="info">1</td>
+						<td class="warning">2</td>
+						<td class="danger">3</td>
+						<td class="success">4</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td>4</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>2</td>
+						<td>3</td>
+						<td>4</td>
+					</tr>
+				</table>
+			</div>
+
+			<!--*********************************************************-->
+			<div class="well container-fluid">
+				<h3>4.1.7. Tablas responsive</h3>
+				<p>
+					La soluciÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³n que propone Bootstrap 3 para crear tablas responsive que se vean bien en dispositivos pequeÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±os consiste en aÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±adir un scroll horizontal
+					a las tablas que sean demasiado anchas. Para ello, encierra cualquier tabla con la clase
+					<code>
+						.table
+					</code>
+					dentro de un elemento con la clase
+					<code>
+						.table-responsive
+					</code>
+					. Cuando las tablas responsive se muestran en dispositivos con una anchura superior a 768px, se ven igual que cualquier otra tabla normal.
+				</p>
+				<div class="table-responsive">
+					<table class="table">
+						<tr>
+							<td>1111111111 11111111</td>
+							<td>2222222 22222 22222</td>
+							<td>3333 33333333</td>
+							<td>44444444444 444</td>
+						</tr>
+						<tr>
+							<td>1111111111 11111111</td>
+							<td>2222222 22222 22222</td>
+							<td>3333 33333333</td>
+							<td>44444444444 444</td>
+						</tr>
+						<tr>
+							<td>1111111111 11111111</td>
+							<td>2222222 22222 22222</td>
+							<td>3333 33333333</td>
+							<td>44444444444 444</td>
+						</tr>
+						<tr>
+							<td>1111111111 11111111</td>
+							<td>2222222 22222 22222</td>
+							<td>3333 33333333</td>
+							<td>44444444444 444</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+
+			<!--*********************************************************-->
+			<div class="well container-fluid">
+				<h3>Imagenes</h3>
+				<p>
+					Bootstrap 3 define varias clases CSS para decorar las imÃƒÆ’Ã‚Â¡genes de tus sitios web:
+				</p>
+				<ul>
+					<li>
+						<code>
+							.img-rounded
+						</code>
+						, aÃƒÆ’Ã‚Â±ade unas pequeÃƒÆ’Ã‚Â±as esquinas redondeadas en todos los lados de la imagen aplicando el estilo <tt>border-radius: 6px</tt>
+					</li>
+					<li>
+						<code>
+							.img-thumbnail
+						</code>
+						, muestra la imagen con un relleno blanco y un borde fino simulando el aspecto de las fotografÃƒÆ’Ã‚Â­as de las antiguas cÃƒÆ’Ã‚Â¡maras instantÃƒÆ’Ã‚Â¡neas. AÃƒÆ’Ã‚Â±ade ademÃƒÆ’Ã‚Â¡s una breve animaciÃƒÆ’Ã‚Â³n para hacer que la imagen aparezca al cargar la pÃƒÆ’Ã‚Â¡gina.
+					</li>
+					<li>
+						<code>
+							.img-circle
+						</code>
+						, convierte la imagen en un cÃƒÆ’Ã‚Â­rculo aplicando el estilo <tt>border-radius: 50%</tt>
+					</li>
+				</ul>
+				<img src="img/Abstract Color Vector.jpg"  class="img-rounded" title="Imagen Vector" />
+				<img src="img/Abstract Color Vector.jpg"  class="img-thumbnail"/>
+				<img src="img/Abstract Color Vector.jpg"  class="img-circle"/>
+				<img src="img/Abstract Color Vector.jpg"  class="img-responsive" />
+			</div>
+
+			<!--*********************************************************-->
+			<div class="well container-fluid">
+				<h2>4.3. Utilidades </h2>
+				<h3>4.3.1. Icono para cerrar</h3>
+				<p>
+					Bootstrap 3 define la clase
+					<code>
+						.close
+					</code>
+					para mostrar la entidad HTML
+					<tt> &times; </tt> como si fuera la tÃƒÂ­pica X asociada con el cierre de una ventana o aplicaciÃƒÂ³n. UtilÃƒÂ­zalo para mostrar el icono de cerrar en las ventanas modales o en las alertas sin tener que utilizar una imagen.
+					Ejemplo:
+				</p>
+				<button type="button" class="close" aria-hidden="true">
+					&times;
+				</button>
+
+			</div>
+
+			<!--*********************************************************-->
+			<div class="well container-fluid">
+				<h3>4.3.2. Elementos flotantes</h3>
+				<p>
+					Flotar un elemento a la derecha o a la izquierda es muy habitual en la mayorÃƒÂ­a de diseÃƒÂ±os web. Por eso Bootstrap 3 define dos clases CSS genÃƒÂ©ricas llamadas
+					<code>
+						.pull-left
+					</code>
+					y
+					<code>
+						.pull-right
+					</code>
+					que puedes aplicar sobre cualquier elemento:
+				</p>
+				<p>
+					Este es el cÃƒÂ³digo CSS aplicado a cada clase (la palabra reservada <tt>!important</tt> se utiliza para evitar posibles problemas con la especificidad de los selectores):
+				</p>
+				<p>
+					Bootstrap 3 tambiÃƒÂ©n define mixins para que puedas utilizar estos estilos en tus archivos LESS:
+				</p>
+				<p>
+					No utilices estas clases para alinear los componentes de las barras de navegaciÃƒÂ³n
+					<code>
+						.navbar
+					</code>
+					. Utiliza en su lugar las dos clases equivalentes
+					<code>
+						.navbar-left
+					</code>
+					y
+					<code>
+						.navbar-right
+					</code>
+					.
+				</p>
+				<div class="pull-right">
+					- pull-right -
+				</div>
+				<div class="pull-left">
+					- pull-left -
+				</div>
+			</div>
+
+			<!--*********************************************************-->
+			<div class="well container-fluid">
+				<h3>4.3.3. Elementos centrados</h3>
+				<p>
+					Aplica la clase especial
+					<code>
+						center-block
+					</code>
+					para centrar horizontalmente cualquier elemento (el elemento centrado se convierte en un elemento de bloque):
+				</p>
+
+				<div class="center-block">
+					- center-block -
+				</div>
+
+			</div>
+
+			<!--*********************************************************-->
+			<div class="well container-fluid">
+				<h3>4.3.4. Limpiando floats</h3>
+				<p>
+					Cuando un diseÃƒÂ±o utiliza muchos elementos flotantes, es comÃƒÂºn tener que limpiar un elemento para que no le afecten otros elementos flotantes. Bootstrap 3 utiliza para ello el famoso hack clearfix creado originalmente por Nicolas Gallagher.
+				</p>
+				<div class="clearfix">
+					- clearfix -
+				</div>
+			</div>
+
+			<!--*********************************************************-->
+			<div class="well container-fluid">
+				<h3>4.3.5.  Ocultando y mostrando elementos</h3>
+				<p>
+					Otras de las utilidades incluidas por Bootstrap 3 son las clases
+					<code>
+						.show
+					</code>
+					y
+					<code>
+						.hide
+					</code>
+					, que muestran y ocultan cualquier elemento.
+				</p>
+				<div class="show">
+					- show -
+				</div>
+				<div class="hide">
+					- hide -
+				</div>
+			</div>
+
+			<!--*********************************************************-->
+			<div class="well container-fluid">
+				<h3>Contenidos ocultos</h3>
+				<p>
+					Cuando se diseÃƒÂ±a un sitio web accesible, es comÃƒÂºn aÃƒÂ±adir ayudas en forma de texto que no se ve por pantalla, pero sÃƒÂ­ que se lee en los lectores que utilizan para navegar las personas discapacitadas.
+				</p>
+				<p>
+					Bootstrap 3 define la clase
+					<code>
+						.sr-only
+					</code>
+					para marcar un contenido como oculto y que sÃƒÂ³lo estÃƒÂ© disponible para los lectores ("screen readers" en inglÃƒÂ©s, de ahÃƒÂ­ el nombre de la clase CSS). Ejemplo:
+				</p>
+				<a class="sr-only" href="#contenido">Ir al contenido</a>
+			</div>
+
+			<!--*********************************************************-->
+			<div class="well container-fluid">
+				<h3>4.3.7. Reemplazando texto por imÃƒÂ¡genes</h3>
+				<p>
+					Una de las tÃƒÂ©cnicas mÃƒÂ¡s habituales para mostrar el logotipo de los sitios web consiste en ocultar el texto de un elemento <tt>h1</tt> para que se vea la imagen de fondo que contiene el logotipo. Esta tÃƒÂ©cnica es tan habitual que Bootstrap 3 define la clase
+					<code>
+						.text-hide
+					</code>
+					para que puedas aplicarla a cualquier elemento. Ejemplo:
+				</p>
+				<h1 class="text-hide">E.S.E. Hospital San Rafael</h1>
+			</div>
+
+			<!--*********************************************************-->
+			<div class="well container-fluid">
+				<h3>4.3.8. Utilidades responsive</h3>
+				<p>
+profuncizar este tema en:<br>
+<a href="http://librosweb.es/bootstrap_3/capitulo_4/utilidades.html">http://librosweb.es/bootstrap_3/capitulo_4/utilidades.html</a>
+				</p>
+			</div>
+
+		
+		</div><!--Fin del contenedor-->
+		<!-- LibrerÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¯ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¿ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â½a jQuery requerida por los plugins de JavaScript -->
+		<script src="http://code.jquery.com/jquery.js"></script>
+		<!-- Todos los plugins JavaScript de Bootstrap (tambiÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©n puedes
+		incluir archivos JavaScript individuales de los ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âºnicos
+		plugins que utilices) -->
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
+

@@ -1,0 +1,587 @@
+<!DOCTYPE html><!-- siempre usar esto, es HTML5 -->
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<!-- Responsive web designe -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Si se quiere desabilitar zoom -->
+		<!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">-->
+
+		<title>Curso de Bootstrap 3</title>
+		<!-- mayor compatibilidad con IE8 -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<!-- CSS de Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+		<!-- librerÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚Â¿Ãƒâ€šÃ‚Â½as opcionales que activan el soporte de HTML5 para IE8 -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="container">
+			<h1 >!Tipografia!</h1>
+			<hr >
+			<!-- ************************************************-->
+			<div class="row">
+				<h2>Clases de Titulos</h2>
+				<br>
+				<h1>h1. Bootstrap heading</h1>
+				<h2>h2. Bootstrap heading</h2>
+				<h3>h3. Bootstrap heading</h3>
+				<h4>h4. Bootstrap heading</h4>
+				<h5>h5. Bootstrap heading</h5>
+				<h6>h6. Bootstrap heading</h6>
+			</div>
+			<hr >
+
+			<!-- ************************************************-->
+			<div class="row">
+				<h2>Titulos con elementos
+				<code>
+					small
+				</code></h2>
+				<br>
+				<p>
+					Bootstrap tambiÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©n define estilos especiales para los elementos
+					<code>
+						small
+					</code>
+					incluidos dentro de un titular y utilizados habitualmente para mostrar informaciÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³n secundaria. Ejemplo:
+				</p>
+				<h1>h1. Bootstrap heading <small>Secondary text</small></h1>
+				<h2>h2. Bootstrap heading <small>Secondary text</small></h2>
+				<h3>h3. Bootstrap heading <small>Secondary text</small></h3>
+				<h4>h4. Bootstrap heading <small>Secondary text</small></h4>
+				<h5>h5. Bootstrap heading <small>Secondary text</small></h5>
+				<h6>h6. Bootstrap heading <small>Secondary text</small></h6>
+				<h6>h6. Bootstrap heading <small>Secondary text</small></h6>
+			</div>
+			<hr >
+
+			<!-- ************************************************-->
+			<div class="row">
+				<h2>Texto destacado</h2>
+				<p class="lead">
+					Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus
+				</p>
+				<p>
+					Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus
+				</p>
+			</div>
+			<hr >
+
+			<!-- ************************************************-->
+			<div class="row">
+				<h2>Variables de LESS</h2>
+				<p>
+					La escala tipogrÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡fica de tamaÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±os de letra se basa en dos variables LESS definidas en el archivo variables.less: @font-size-base y @line-height-base.
+				</p>
+				<p>
+					La primera variable es el tamaÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±o de letra base y la segunda es el interlineado base del texto. Como estos valores se utilizan para calcular los mÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡rgenes, rellenos e interlineados de todos los elementos, si modificas sus valores Bootstrap adaptarÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡ automÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡ticamente todo el diseÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±o.
+				</p>
+			</div>
+			<hr >
+
+			<!-- ************************************************-->
+			<div class="row">
+				<h2>Texto poco importante en Bootstrap 3</h2>
+				<p>
+					Se utiliza la etiqueta
+					<code>
+						small
+					</code>
+				</p>
+			</div>
+			<hr >
+
+			<!-- ************************************************-->
+			<div class="row">
+				<h2>Texto en negrita</h2>
+				<p>
+					Utiliza la etiqueta
+					<code>
+						bold
+					</code>
+					para aÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±adir ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©nfasis a un texto mostrÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡ndolo en negrita
+				<p>
+					Parrafo con <strong> texto en negrita </strong>usando la etiqueta
+					<code>
+						strong
+					</code>
+					.
+				</p>
+			</div>
+			<hr >
+
+			<!-- ************************************************-->
+			<div class="row">
+				<h2>Texto en cursiva</h2>
+				<p>
+					Utiliza la etiqueta
+					<code>
+						em
+					</code>
+					para aÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±adir ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©nfasis a un texto mostrÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡ndolo en cursiva. Este ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©nfasis es de menor importancia que el definido por la etiqueta
+					<code>
+						strong
+					</code>
+				</p>
+				<p>
+					El siguiente trozo de texto
+					<em> se muestra en cursiva</em>.
+				</p>
+			</div>
+			<hr >
+
+			<!-- ************************************************-->
+			<div class="row">
+				<h2>Etiquetas alternativas</h2>
+				<p>
+					Cuando creas pÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡ginas HTML5, tambiÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©n puedes emplear las etiquetas
+					<code>
+						b
+					</code>
+					y
+					<code>
+						i
+					</code>
+					. La etiqueta
+					<code>
+						b
+					</code>
+					se emplea para destacar palabras o frases sin darles ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©nfasis o importancia. La etiqueta
+					<code>
+						i
+					</code>
+					se emplea sobre todo para marcar tÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©rminos tÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©cnicos, etc.
+				</p>
+			</div>
+			<hr >
+
+			<!-- ************************************************-->
+			<div class="row">
+				<h2>Clases CSS para alinear texto</h2>
+				<p>
+					Para alinear a la irquierda se usa la clase
+					<code>
+						.text-left
+					</code>
+					en la etiqueta para parrafos
+				</p>
+				<p>
+					Para alinear al centrose usa la clase
+					<code>
+						.text-center
+					</code>
+					en la etiqueta para parrafos
+				</p>
+				<p>
+					Para alinear a la derecha se usa la clase
+					<code>
+						.text-right
+					</code>
+					en la etiqueta para parrafos
+				</p>
+				<p class="text-left">
+					Texto alineado a la izquierda. con
+					<code>
+						.text-left
+					</code>
+				</p>
+				<p class="text-center">
+					Texto centrado. con
+					<code>
+						.text-center
+					</code>
+				</p>
+				<p class="text-right">
+					Texto alineado a la derecha. con
+					<code>
+						.text-right
+					</code>
+				</p>
+			</div>
+			<hr >
+
+			<!-- ************************************************-->
+			<div class="row">
+				<h2>Clases CSS para indicar el tipo de contenido. Texto de Colores</h2>
+				<p>
+					Es poco recomendado por el tema de Accesibilidad
+					<br>
+				<p class="text-muted">
+					Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.
+				</p>
+				<p class="text-primary">
+					Nullam id dolor id nibh ultricies vehicula ut id elit.
+				</p>
+				<p class="text-success">
+					Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+				</p>
+				<p class="text-info">
+					Maecenas sed diam eget risus varius blandit sit amet non magna.
+				</p>
+				<p class="text-warning">
+					Etiam porta sem malesuada magna mollis euismod.
+				</p>
+				<p class="text-danger">
+					Donec ullamcorper nulla non metus auctor fringilla.
+				</p>
+				<hr >
+			</div>
+			<!-- ************************************************-->
+			<div class="row">
+				<h2>Abreviaturas </h2>
+				<p>
+					Si empleas la etiqueta
+					<code>
+						abbr
+					</code>
+					de HTML para marcar las abreviaturas y los acrÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³nimos, los usuarios podrÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡n ver su contenido completo al pasar el ratÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³n por encima de ellas. AdemÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡s, si la abreviatura define el atributo
+					<code>
+						title
+					</code>
+					, Bootstrap aÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±ade un fino borde inferior punteado para indicar al usuario que puede pasar el ratÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³n por encima (tambiÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©n cambia el tipo de puntero que se muestra al pasar el ratÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³n por encima).
+					<br>
+					<abbr title="E.S.E. Hospital San Rafael - Ebejico">E.S.E.</abbr>
+				</p>
+				<hr >
+			</div>
+			<!-- ************************************************-->
+			<div class="row">
+				<h2>Iniciales</h2>
+				<p>
+					AÃƒÂ±ade la clase .initialism (iniciales en ingles) a un elemento <code>abbr</code> para reducir ligeramente su tamaÃƒÆ’Ã‚Â±o de letra y asiÃƒâ€šÃ‚Â­ hacer que el texto se lea mejor. Ejemplo:
+						<br>
+						<p>
+							Esta pagina estÃƒÆ’Ã‚Â¡ escrita con <abbr title="HyperText Markup Language" class="initialism">HTML</abbr>
+						</p>
+				</p>
+				<hr >
+			</div>
+			<!-- ************************************************-->
+			<div class="row">
+				<h2>Direcciones</h2>
+				<p>
+					Utiliza la etiqueta
+					<code>
+						address
+					</code>
+					para mostrar la informaciÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³n de contacto de tu sitio o pÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡gina. No olvides aÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±adir
+					<code>
+						br
+					</code>
+					al final de cada lÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â­nea para mantener el texto de la direcciÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³n bien formateado. Ejemplo:
+					<br>
+
+					<address>
+						<strong>E.S.E. Hospital San Rafael - Ebejico Ant.</strong>
+						<br>
+						Vereda Fatima
+						<br>
+						EbÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©jico, Antioquia
+						<br>
+						<abbr title="Telefono">Tel:</abbr> 856 2681
+					</address>
+
+					<address>
+						<strong>Hernan Velasquez</strong>
+						<br>
+						<a href="mailto:hvelasquez@hospitalebejico.gov.co">Email</a>
+					</address>
+				</p>
+				<hr >
+			</div>
+			<!-- ************************************************-->
+			<div class="row">
+				<h2>Blockquotes</h2>
+				<p>
+					Estos elementos se emplean para incluir en tus pÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡ginas trozos de contenidos de otras fuentes.
+				</p>
+				<h3>Blockquote por defecto</h3>
+				<p>
+					Utiliza el elemento
+					<code>
+						blockquote
+					</code>
+					para encerrar el contenido que se va a incluir en la pÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡gina. TambiÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©n se recomienda utilizar el elemento
+					<code>
+						p
+					</code>
+					para encerrar el texto dentro del
+					<code>
+						blockquote
+					</code>
+					. Ejemplo:
+					<blockquote>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+						</p>
+					</blockquote>
+				<p>
+					Se puede usar
+					<code>
+						small
+					</code>
+					para mostrar la fuente original
+				</p>
+				<blockquote>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+					</p>
+					<small>Frase cÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©lebre de <cite title="Nombre Apellidos">Nombre Apellidos</cite></small>
+				</blockquote>
+				<p>
+					Modificando la alineaciÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³n con la asignando la clase
+					<code>
+						.pull-right
+					</code>
+					a la etiqueta
+					<code>
+						blockquote
+					</code>
+					.
+				</p>
+
+				<blockquote class="pull-right">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+					</p>
+					<small>Frase cÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©lebre de <cite title="Nombre Apellidos">Nombre Apellidos</cite></small>
+				</blockquote>
+				</p>
+				<hr >
+			</div>
+			<br>
+			<!-- ************************************************-->
+			<div class="row">
+				<h2>Listas</h2>
+				<h3>Lsitas no ordenadas</h3>
+				<p>
+					UtilÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â­zalas para agrupar elementos para los que su orden no importa. Bootstrap 3 tambiÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©n incluye los estilos adecuados para las las listas anidadas. Ejemplo:
+				</p>
+
+				<ul>
+					<li>
+						Lorem ipsum dolor sit amet
+					</li>
+					<li>
+						Consectetur adipiscing elit
+					</li>
+					<li>
+						Integer molestie lorem at massa
+					</li>
+					<li>
+						Facilisis in pretium nisl aliquet
+					</li>
+					<li>
+						Nulla volutpat aliquam velit
+						<ul>
+							<li>
+								Phasellus iaculis neque
+							</li>
+							<li>
+								Purus sodales ultricies
+							</li>
+							<li>
+								Vestibulum laoreet porttitor sem
+							</li>
+							<li>
+								Ac tristique libero volutpat at
+							</li>
+						</ul>
+					</li>
+					<li>
+						Faucibus porta lacus fringilla vel
+					</li>
+					<li>
+						Aenean sit amet erat nunc
+					</li>
+					<li>
+						Eget porttitor lorem
+					</li>
+				</ul>
+
+				<h3>Listas ordenadas</h3>
+				<p>
+					En este caso, el orden de los elementos sÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â­ es importante y por eso se muestran numerados. Ejemplo:
+				</p>
+
+				<ol>
+					<li>
+						Lorem ipsum dolor sit amet
+					</li>
+					<li>
+						Consectetur adipiscing elit
+					</li>
+					<li>
+						Integer molestie lorem at massa
+					</li>
+					<li>
+						Facilisis in pretium nisl aliquet
+					</li>
+					<li>
+						Nulla volutpat aliquam velit
+					</li>
+					<li>
+						Faucibus porta lacus fringilla vel
+					</li>
+					<li>
+						Aenean sit amet erat nunc
+					</li>
+					<li>
+						Eget porttitor lorem
+					</li>
+				</ol>
+
+				<h3>Listas sin estilo</h3>
+				<p>
+					Como resulta muy habitual mostrar las listas sin viÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±etas y sin margen izquierdo, Bootstrap 3 incluye una clase CSS llamada
+					<code>
+						.list-unstyled
+					</code>
+					para aplicar esos estilos.
+				</p>
+				<p>
+					La ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Âºnica pega de esta clase es que sÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³lo se aplica a los elementos de una lista y no a los elementos de sus listas anidadas. AsÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â­ que si quieres aplicar los estilos a todos los elementos, aÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±ade la clase
+					<code>
+						.list-unstyled
+					</code>
+					tambiÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©n a las listas anidadas
+				</p>
+				<h3>Listas en lÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â­nea</h3>
+				<p>
+					TambiÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©n resulta habitual mostrar los elementos de una lista horizontalmente, como por ejemplo en el menÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Âº principal de navegaciÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³n. Para ello, Bootstrap 3 define una clase CSS llamada
+					<code>
+						.inline-block
+					</code>
+					. Ejemplo:
+				</p>
+
+				<ul class="list-inline">
+					<li>
+						Lorem ipsum
+					</li>
+					<li>
+						Phasellus iaculis
+					</li>
+					<li>
+						Nulla volutpat
+					</li>
+				</ul>
+				<h3>Listas de definiciÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³n</h3>
+				<p>
+					No se utilizan mucho, pero Bootstrap 3 tambiÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©n incluye estilos por defecto para las listas de definiciÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³n, formadas por pares tÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©rmino + definiciÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³n. Ejemplo:
+				</p>
+
+				<dl>
+					<dt>
+						Description lists
+					</dt>
+					<dd>
+						A description list is perfect for defining terms.
+					</dd>
+					<dt>
+						Euismod
+					</dt>
+					<dd>
+						Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.
+					</dd>
+					<dd>
+						Donec id elit non mi porta gravida at eget metus.
+					</dd>
+					<dt>
+						Malesuada porta
+					</dt>
+					<dd>
+						Etiam porta sem malesuada magna mollis euismod.
+					</dd>
+				</dl>
+				<h3>Listas de definiciÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³n horizontales</h3>
+				<p>
+					Si lo prefieres, tambiÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©n es posible mostrar la lista de definiciÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³n horizontalmente aÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±adiendo la clase
+					<code>
+						.dl-horizontal
+					</code>
+					. Ejemplo
+				</p>
+				<dl class="dl-horizontal">
+					<dt>
+						Description lists
+					</dt>
+					<dd>
+						A description list is perfect for defining terms.
+					</dd>
+					<dt>
+						Euismod
+					</dt>
+					<dd>
+						Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.
+					</dd>
+					<dd>
+						Donec id elit non mi porta gravida at eget metus.
+					</dd>
+					<dt>
+						Malesuada porta
+					</dt>
+					<dd>
+						Etiam porta sem malesuada magna mollis euismod.
+					</dd>
+					<dt>
+						Felis euismod semper eget lacinia
+					</dt>
+					<dd>
+						Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+					</dd>
+					<br>
+					<p>
+						Cuando una lista de definiciÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³n se muestra horizontalmente, se cortan automÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡ticamente con
+						<code>
+							text-overflow
+						</code>
+						los tÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©rminos que son demasiado largos. En los dispositivos pequeÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±os, los tÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©rminos no se cortan pero se muestran verticalmente uno encima de otro.
+					</p>
+				</dl>
+			</div>
+			<br>
+			<!-- ************************************************-->
+			<div class="row">
+				<h2>Codigo</h2>
+				Utiliza la etiqueta
+				<code>
+					&lt;code&gt;
+				</code>.
+			</div>
+
+			<div class="row">
+				<hr >
+				<!-- ************************************************-->
+				<ul class="pager">
+					<li>
+						<a href="Cap 02 - DiseÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±ando con rejilla.html">&lt;&lt; Capitulo 2</a>
+					</li>
+					<li>
+						<a href="index.html">Inicio</a>
+					</li>
+					<li>
+						<a href="Cap 04 - Elementos CSS.html">Capitulo 4 &gt;&gt;</a>
+					</li>
+				</ul>
+			</div>
+		</div><!--Fin del contenedor-->
+
+		<!-- LibrerÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚Â¿Ãƒâ€šÃ‚Â½a jQuery requerida por los plugins de JavaScript -->
+		<script src="http://code.jquery.com/jquery.js"></script>
+
+		<!-- Todos los plugins JavaScript de Bootstrap (tambiÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©n puedes
+		incluir archivos JavaScript individuales de los ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Âºnicos
+		plugins que utilices) -->
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
+

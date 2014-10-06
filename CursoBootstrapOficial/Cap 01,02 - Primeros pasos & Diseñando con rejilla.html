@@ -1,0 +1,205 @@
+<!-- siempre usar esto, es HTML5 -->
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<!-- Responsive web designe -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Si se quiere desabilitar zoom -->
+		<!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">-->
+
+		<title>Curso de Bootstrap 3</title>
+		<!-- mayor compatibilidad con IE8 -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<!-- CSS de Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+		<!-- librerÃ¯Â¿Â½as opcionales que activan el soporte de HTML5 para IE8 -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="container text-justify">
+			<h1>!Hola mundo!</h1>
+			<hr >
+			<!-- ************************************************-->
+			<div>
+				<h2>ImÃƒÂ¡genes responsive</h2>
+				<p>
+
+					Bootstrap 3 ya no adapta el tamaÃƒÂ±o de las imÃƒÂ¡genes automÃƒÂ¡ticamente como sucedÃƒÂ­a en Bootstrap 2. Para mantener el mismo comportamiento de antes, debes aÃƒÂ±adir la clase .img-responsive a cada imagen que quieras que se comporte de manera responsive. Esta clase incluye las propiedades max-width: 100%; y height: auto; para que la imagen escale en funciÃƒÂ³n del tamaÃƒÂ±o del elemento en el que se encuentra.
+				</p>
+				<img src="..." class="img-responsive" alt="Imagen responsive">
+			</div>
+			<!-- ************************************************-->
+
+			<hr >
+			<div>
+				<h2>TipografÃƒÂ­a y enlaces</h2>
+				<p>
+					Bootstrap establece una serie de estilos por defecto para la tipografÃƒÂ­a de todos los elementos y para los enlaces de la pÃƒÂ¡gina. En concreto:
+					<ul>
+						<li>
+							Se establece a blanco el color de fondo del body con la propiedad background-color: white;
+						</li>
+						<li>
+							Se utiliza el valor de las variables @font-family-base, @font-size-base y @line-height-base definidas por LESS como atributos de las propiedades tipogrÃƒÂ¡ficas de los elementos.
+						</li>
+						<li>
+							Se establece el color de los enlaces al valor de la variable @link-color de LESS y sÃƒÂ³lo se muestran los enlaces subrayados en el estado :hover
+						</li>
+					</ul>
+					Esta primera inicializaciÃƒÂ³n de estilos se define en el archivo scaffolding.less.
+				</p>
+			</div>
+			<!-- ************************************************-->
+
+			<hr >
+
+			<div>
+				<h2>Centrando los contenidos de la pÃƒÂ¡gina</h2>
+				<p>
+					Si quieres centrar una pÃƒÂ¡gina respecto a la ventana del navegador, encierra sus contenidos dentro de un elemento y aplÃƒÂ­cale la clase
+					<code>
+						.container
+					</code>
+					:
+				</p>
+			</div>
+			<!-- ************************************************-->
+			<hr >
+
+			<!-- ************************************************-->
+			<div class="row">
+				<h2>Ejemplo de contenedor de anchura variable</h2>
+				<p>
+					Si quieres transformar una rejilla de anchura fija en una rejilla de anchura variable que ocupa toda la anchura del navegador,
+					reemplaza la clase CSS
+					<code>
+						.container
+					</code>
+					por
+					<code>
+						.container-fluid
+					</code>
+					en el elemento que encierra a todos los demÃƒÂ¡s elementos de la rejilla:
+				</p>
+			</div>
+			<hr >
+
+			<!-- ************************************************-->
+			<div class="row">
+				<p>
+					<h2><a href="http://librosweb.es/bootstrap_3/capitulo_2/tipos_de_rejillas.html">Profundizar en este tema</a></h2>
+				</p>
+			</div>
+			<hr >
+
+			<!-- ************************************************-->
+			<div class="row">
+				<p>
+					<h2><a href="http://librosweb.es/bootstrap_3/capitulo_2/reseteando_columnas.html">Reseteando columnas </a></h2>
+				</p>
+			</div>
+			<hr >
+
+			<!-- ************************************************-->
+			<div class="row">
+				<p>
+					<h2><a href="http://librosweb.es/bootstrap_3/capitulo_2/desplazando_columnas.html">Desplazando columnas </a></h2>
+				</p>
+			</div>
+			<hr >
+
+			<!-- ************************************************-->
+			<div class="row">
+				<p>
+					<h2><a href="http://librosweb.es/bootstrap_3/capitulo_2/anidando_columnas.html">Anidando columnas</a></h2>
+				</p>
+			</div>
+			<hr >
+
+			<!-- ************************************************-->
+			<div class="row">
+				<p>
+					<h2><a href="http://librosweb.es/bootstrap_3/capitulo_2/reordenando_las_columnas.html">Reordenando las columnas</a></h2>
+				</p>
+			</div>
+			<hr >
+
+			<!-- ************************************************-->
+			<div class="row">
+				<p>
+					<h2><a href="http://librosweb.es/bootstrap_3/capitulo_2/variables_y_mixins_de_less.html">Variables y mixins de LESS </a></h2>
+				</p>
+			</div>
+			<hr >
+
+			<!-- ************************************************-->
+			<div class="row ">
+				<h2>Botones</h2>
+				<button type="button" class="btn btn-default">
+					btn-default
+				</button>
+				<button type="button" class="btn btn-success">
+					btn-success
+				</button>
+				<button type="button" class="btn btn-primary">
+					btn-primary
+				</button>
+				<button type="button" class="btn btn-info">
+					btn-info
+				</button>
+				<button type="button" class="btn btn-warning">
+					btn-warning
+				</button>
+				<button type="button" class="btn btn-danger">
+					btn-danger
+				</button>
+			</div>
+			<div class="row">
+				<hr >
+				<!-- ************************************************-->
+				<h2>lista</h2>
+				<ul class="pager">
+					<li>
+						<a href="#">Anterior</a>
+					</li>
+					<li>
+						<a href="#">Inicio</a>
+					</li>
+					<li>
+						<a href="#">Siguiente</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="row">
+				<hr >
+				<!-- ************************************************-->
+				<ul class="pager">
+					<li>
+						<a href="index.html">Inicio</a>
+					</li>
+					<li>
+						<a href="Cap 02 - DiseÃƒÂ±ando con rejilla.html">Capitulo 2 &gt;&gt;</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- LibrerÃ¯Â¿Â½a jQuery requerida por los plugins de JavaScript -->
+		<script src="http://code.jquery.com/jquery.js"></script>
+
+		<!-- Todos los plugins JavaScript de Bootstrap (tambiÃƒÂ©n puedes
+		incluir archivos JavaScript individuales de los ÃƒÂºnicos
+		plugins que utilices) -->
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
+
